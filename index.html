@@ -3,839 +3,775 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bergara B-14 Ridge .308 Win 20" Bolt-Action Rifle B14S501C</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>Bergara B-14 Ridge .308 Win — B14S501C | RifleCompare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --olive:        #4a5240;
-    --olive-mid:    #5c6650;
-    --olive-light:  #7a8a6a;
-    --olive-pale:   #c8cdb8;
-    --olive-wash:   #eef0e8;
-    --cream:        #f5f0e8;
-    --bone:         #ede8dc;
-    --bone-dark:    #d6cfc0;
-    --charcoal:     #232b22;
-    --charcoal-mid: #2f3a2e;
-    --orange:       #c4521a;
-    --orange-hover: #a84415;
-    --orange-light: #e8793a;
-    --text-primary: #1e2519;
-    --text-muted:   #5c6050;
-    --text-light:   #8a9080;
-    --border:       #cdd0c0;
-    --shadow:       rgba(35,43,34,0.12);
+    --olive:       #4A5240;
+    --olive-dark:  #323827;
+    --olive-mid:   #5C6650;
+    --olive-light: #8A9A7A;
+    --olive-pale:  #D4DCCA;
+    --cream:       #F5F0E8;
+    --bone:        #EAE3D2;
+    --bone-dark:   #CFC8B4;
+    --charcoal:    #1E2419;
+    --charcoal-mid:#2C3225;
+    --orange:      #C4581A;
+    --orange-light:#E06B25;
+    --orange-pale: #F4D4B8;
+    --white:       #FDFAF5;
+    --text-dark:   #1E2419;
+    --text-mid:    #4A5240;
+    --text-muted:  #7A8A6A;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
   body {
-    font-family: 'Source Serif 4', Georgia, serif;
+    font-family: 'Barlow', sans-serif;
     background: var(--cream);
-    color: var(--text-primary);
+    color: var(--text-dark);
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.6;
   }
 
   /* ── NAV ── */
   nav {
     background: var(--charcoal);
     padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 56px;
     position: sticky;
     top: 0;
     z-index: 100;
     border-bottom: 2px solid var(--orange);
   }
-  .nav-brand {
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .nav-logo {
     font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
+    font-size: 20px;
     font-weight: 700;
     color: var(--cream);
-    letter-spacing: 0.05em;
+    letter-spacing: 1px;
     text-decoration: none;
   }
-  .nav-brand span { color: var(--orange); }
-  .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+  .nav-logo span { color: var(--orange); }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
   .nav-links a {
     color: var(--olive-pale);
     text-decoration: none;
-    font-size: 0.8rem;
-    font-family: 'DM Mono', monospace;
-    letter-spacing: 0.1em;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
     transition: color 0.2s;
   }
-  .nav-links a:hover { color: var(--orange-light); }
-  .nav-badge {
+  .nav-links a:hover { color: var(--orange); }
+  .nav-cta {
     background: var(--orange);
-    color: #fff;
-    font-size: 0.7rem;
-    font-family: 'DM Mono', monospace;
-    padding: 2px 8px;
-    border-radius: 2px;
-    letter-spacing: 0.08em;
+    color: var(--white) !important;
+    padding: 8px 18px;
+    border-radius: 3px;
+    font-weight: 600 !important;
   }
+  .nav-cta:hover { background: var(--orange-light); color: var(--white) !important; }
 
   /* ── BREADCRUMB ── */
   .breadcrumb {
     background: var(--charcoal-mid);
-    padding: 0.6rem 2rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--olive-pale);
-    letter-spacing: 0.05em;
+    padding: 10px 2rem;
+    font-size: 12px;
+    color: var(--olive-light);
+    letter-spacing: 0.5px;
   }
-  .breadcrumb a { color: var(--olive-pale); text-decoration: none; }
-  .breadcrumb span { color: var(--orange-light); margin: 0 0.4rem; }
+  .breadcrumb a { color: var(--olive-light); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--orange); }
+  .breadcrumb span { margin: 0 6px; }
 
-  /* ── HERO ── */
+  /* ── HERO SECTION ── */
   .hero {
-    background: var(--charcoal);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 480px;
-  }
-  .hero-image {
-    background: var(--charcoal-mid);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero-image::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
+    background: var(--olive-dark);
+    background-image: repeating-linear-gradient(
       45deg,
       transparent,
-      transparent 30px,
-      rgba(74,82,64,0.06) 30px,
-      rgba(74,82,64,0.06) 31px
+      transparent 40px,
+      rgba(255,255,255,0.012) 40px,
+      rgba(255,255,255,0.012) 80px
     );
+    padding: 3rem 2rem;
+    border-bottom: 3px solid var(--orange);
   }
-  .rifle-svg {
-    width: 100%;
-    max-width: 520px;
-    height: auto;
-    position: relative;
-    z-index: 1;
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 3rem;
+    align-items: center;
   }
-  .hero-content {
-    padding: 2.5rem 2.5rem 2.5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+  .hero-badge {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 1rem;
   }
   .hero-series {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.2em;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--orange-light);
+    color: var(--olive-light);
+    margin-bottom: 0.5rem;
   }
-  .hero-title {
+  .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--cream);
-    line-height: 1.15;
-  }
-  .hero-subtitle {
-    font-size: 1rem;
-    color: var(--olive-pale);
-    font-style: italic;
-    font-weight: 300;
-  }
-  .hero-ids {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 0.25rem;
-  }
-  .hero-id {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 2px;
-    padding: 4px 10px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--olive-pale);
-  }
-  .hero-id strong { color: var(--cream); }
-  .hero-price-block {
-    background: rgba(196,82,26,0.12);
-    border: 1px solid rgba(196,82,26,0.3);
-    border-radius: 4px;
-    padding: 1rem 1.25rem;
-    margin-top: 0.5rem;
-  }
-  .hero-price-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--orange-light);
-  }
-  .hero-price {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.4rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 900;
     color: var(--cream);
     line-height: 1.1;
+    margin-bottom: 0.5rem;
   }
-  .hero-price-range {
-    font-size: 0.82rem;
+  .hero-caliber {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--orange);
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+  }
+  .hero-desc {
     color: var(--olive-pale);
-    margin-top: 2px;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 560px;
+    margin-bottom: 2rem;
   }
-  .hero-ctas {
+  .hero-meta {
     display: flex;
-    gap: 0.75rem;
+    gap: 2rem;
     flex-wrap: wrap;
-    margin-top: 0.5rem;
   }
-  .btn-primary {
-    background: var(--orange);
-    color: #fff;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
+  .meta-item label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 2px;
-    transition: background 0.2s;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
+    color: var(--olive-light);
+    margin-bottom: 2px;
   }
-  .btn-primary:hover { background: var(--orange-hover); }
+  .meta-item value {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--cream);
+  }
+  .meta-item value.mpn {
+    font-family: 'Barlow', monospace;
+    background: rgba(255,255,255,0.08);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  /* ── HERO IMAGE CARD ── */
+  .hero-card {
+    background: var(--charcoal-mid);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .hero-img-wrap {
+    background: var(--charcoal);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 240px;
+    position: relative;
+  }
+  .hero-img-wrap img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.5));
+  }
+  .accuracy-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--olive-dark);
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+  .hero-price-row {
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .price-label {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--olive-light);
+  }
+  .price-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cream);
+  }
+  .price-from {
+    font-size: 12px;
+    color: var(--olive-light);
+    margin-right: 4px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+  }
+  .btn-compare {
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 10px 22px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+  }
+  .btn-compare:hover { background: var(--orange-light); }
   .btn-secondary {
     background: transparent;
     color: var(--olive-pale);
     border: 1px solid rgba(255,255,255,0.2);
-    padding: 0.7rem 1.25rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    padding: 10px 22px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
     cursor: pointer;
-    border-radius: 2px;
-    transition: all 0.2s;
     text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
   }
-  .btn-secondary:hover { border-color: var(--orange); color: var(--orange-light); }
+  .btn-secondary:hover { border-color: var(--orange); color: var(--orange); }
+  .hero-btns { display: flex; gap: 12px; margin-top: 1rem; padding: 0 1.5rem 1.5rem; }
 
   /* ── MAIN LAYOUT ── */
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-  .main-grid {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
     display: grid;
-    grid-template-columns: 1fr 360px;
-    gap: 2rem;
-    padding: 2.5rem 0;
+    grid-template-columns: 1fr 300px;
+    gap: 2.5rem;
+    align-items: start;
   }
 
-  /* ── SECTION HEADINGS ── */
-  .section-head {
+  /* ── SECTION HEADERS ── */
+  .section-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 0.5rem;
+  }
+  .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--olive);
-    border-bottom: 2px solid var(--orange);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.25rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .section-head::before {
-    content: '';
-    display: inline-block;
-    width: 3px;
-    height: 1.2em;
-    background: var(--orange);
-    border-radius: 1px;
-    flex-shrink: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--olive-dark);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--olive-pale);
   }
 
-  /* ── FEATURES GRID ── */
+  /* ── FEATURES ── */
   .features-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
-  .feature-card {
-    background: var(--bone);
-    border: 1px solid var(--border);
+  .feature-item {
+    background: var(--white);
+    border: 1px solid var(--bone-dark);
     border-radius: 4px;
-    padding: 1rem;
+    padding: 1rem 1.25rem;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
   }
   .feature-icon {
     width: 32px;
     height: 32px;
-    background: var(--olive);
+    background: var(--olive-pale);
     border-radius: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.5rem;
+    flex-shrink: 0;
   }
-  .feature-title {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
+  .feature-icon svg { width: 16px; height: 16px; fill: var(--olive-dark); }
+  .feature-item h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: var(--orange);
-    margin-bottom: 0.2rem;
+    color: var(--olive-dark);
+    margin-bottom: 2px;
   }
-  .feature-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; }
+  .feature-item p { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
 
   /* ── SPECS TABLE ── */
+  .specs-section { margin-bottom: 2.5rem; }
   .specs-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
+    background: var(--white);
+    border: 1px solid var(--bone-dark);
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 14px;
   }
-  .specs-table tr:nth-child(odd) td { background: var(--bone); }
-  .specs-table tr:nth-child(even) td { background: var(--cream); }
+  .specs-table thead tr {
+    background: var(--olive-dark);
+    color: var(--cream);
+  }
+  .specs-table thead th {
+    padding: 10px 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .specs-table tbody tr:nth-child(even) { background: var(--bone); }
+  .specs-table tbody tr:hover { background: var(--olive-pale); }
   .specs-table td {
-    padding: 0.6rem 0.9rem;
-    border: 1px solid var(--border);
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--bone-dark);
+    vertical-align: top;
   }
   .specs-table td:first-child {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.78rem;
-    letter-spacing: 0.06em;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    white-space: nowrap;
+    font-weight: 600;
+    color: var(--olive-dark);
     width: 40%;
+    font-size: 13px;
+    letter-spacing: 0.3px;
   }
-  .specs-table td:last-child {
-    font-weight: 400;
-    color: var(--text-primary);
-  }
+  .specs-table td:last-child { color: var(--text-mid); }
 
-  /* ── VARIANTS TABLE ── */
-  .variants-wrap { overflow-x: auto; margin-bottom: 2rem; }
-  .variants-table {
+  /* ── CONFIGURATIONS TABLE ── */
+  .config-section { margin-bottom: 2.5rem; }
+  .config-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.85rem;
-  }
-  .variants-table th {
-    background: var(--olive);
-    color: var(--cream);
-    padding: 0.6rem 0.9rem;
-    text-align: left;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 500;
-    white-space: nowrap;
-  }
-  .variants-table td {
-    padding: 0.55rem 0.9rem;
-    border-bottom: 1px solid var(--border);
-    color: var(--text-primary);
-    white-space: nowrap;
-  }
-  .variants-table tr:nth-child(odd) td { background: var(--bone); }
-  .variants-table tr:nth-child(even) td { background: var(--cream); }
-  .variants-table tr.active td { background: rgba(196,82,26,0.08); }
-  .badge-active {
-    background: var(--orange);
-    color: #fff;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    padding: 2px 7px;
-    border-radius: 2px;
-    letter-spacing: 0.05em;
-  }
-  .mpn-code {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.8rem;
-    color: var(--olive);
-    background: var(--olive-wash);
-    padding: 2px 6px;
-    border-radius: 2px;
-  }
-
-  /* ── SIDEBAR ── */
-  .sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
-  .sidebar-card {
-    background: var(--bone);
-    border: 1px solid var(--border);
+    font-size: 13px;
+    background: var(--white);
+    border: 1px solid var(--bone-dark);
     border-radius: 4px;
     overflow: hidden;
   }
-  .sidebar-card-head {
-    background: var(--olive);
-    color: var(--cream);
-    padding: 0.65rem 1rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-  .sidebar-card-body { padding: 1rem; }
-  .spec-pill {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 0.88rem;
-  }
-  .spec-pill:last-child { border-bottom: none; }
-  .spec-pill-label { color: var(--text-muted); font-size: 0.8rem; }
-  .spec-pill-val { font-weight: 400; color: var(--text-primary); font-family: 'DM Mono', monospace; font-size: 0.82rem; }
-  .moa-badge {
-    background: var(--olive);
-    color: var(--cream);
-    border-radius: 3px;
-    padding: 0.6rem 1rem;
-    text-align: center;
-    margin-top: 0.75rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.08em;
-  }
-  .moa-badge strong { display: block; font-size: 1.6rem; color: var(--orange-light); font-family: 'Playfair Display', serif; }
-
-  /* ── DESCRIPTION ── */
-  .desc-block {
-    background: var(--bone);
-    border-left: 3px solid var(--orange);
-    padding: 1.25rem 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-    line-height: 1.8;
-    color: var(--text-muted);
-  }
-
-  /* ── VENDOR TABLE ── */
-  .vendor-section {
-    background: var(--charcoal);
-    padding: 2.5rem 2rem;
-    margin: 0;
-  }
-  .vendor-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-    flex-wrap: gap;
-    gap: 1rem;
-  }
-  .vendor-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
+  .config-table thead tr { background: var(--charcoal); }
+  .config-table thead th {
+    padding: 10px 12px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
     font-weight: 600;
-    color: var(--cream);
-  }
-  .vendor-title span { color: var(--orange-light); }
-  .vendor-meta {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--olive-pale);
-    letter-spacing: 0.06em;
-  }
-  .vendor-disclaimer {
-    background: rgba(196,82,26,0.1);
-    border: 1px solid rgba(196,82,26,0.25);
-    border-radius: 3px;
-    padding: 0.6rem 1rem;
-    font-size: 0.8rem;
-    color: var(--olive-pale);
-    margin-bottom: 1.25rem;
-    font-family: 'DM Mono', monospace;
-    letter-spacing: 0.03em;
-  }
-  .vendor-disclaimer strong { color: var(--orange-light); }
-  .vendor-controls {
-    display: flex;
-    gap: 0.75rem;
-    margin-bottom: 1.25rem;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .vendor-filter {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 2px;
-    color: var(--olive-pale);
-    padding: 6px 12px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .vendor-filter.active, .vendor-filter:hover {
-    background: var(--orange);
-    border-color: var(--orange);
-    color: #fff;
-  }
-  .vendor-count-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--olive-pale);
-    margin-left: auto;
-  }
-  .vendor-table-wrap { overflow-x: auto; }
-  .vendor-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.88rem;
-  }
-  .vendor-table thead th {
-    background: var(--charcoal-mid);
-    color: var(--olive-pale);
-    padding: 0.65rem 0.9rem;
-    text-align: left;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    border-bottom: 2px solid var(--orange);
-    white-space: nowrap;
-    cursor: pointer;
-    user-select: none;
-    transition: color 0.2s;
-  }
-  .vendor-table thead th:hover { color: var(--orange-light); }
-  .vendor-table thead th.sorted { color: var(--orange-light); }
-  .vendor-table tbody tr {
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    transition: background 0.15s;
-  }
-  .vendor-table tbody tr:hover { background: rgba(255,255,255,0.04); }
-  .vendor-table tbody tr.best-deal { background: rgba(196,82,26,0.08); }
-  .vendor-table td {
-    padding: 0.65rem 0.9rem;
+    text-align: left;
     color: var(--olive-pale);
     white-space: nowrap;
   }
-  .vendor-table td.store-col {
-    color: var(--cream);
-    font-weight: 400;
+  .config-table tbody tr:nth-child(even) { background: var(--bone); }
+  .config-table tbody tr:hover { background: var(--orange-pale); }
+  .config-table tr.highlight-row { background: var(--olive-pale) !important; }
+  .config-table tr.highlight-row td:first-child {
+    font-weight: 700;
+    color: var(--olive-dark);
   }
-  .vendor-table td.store-col a {
-    color: var(--cream);
-    text-decoration: none;
-    transition: color 0.2s;
+  .config-table td { padding: 9px 12px; border-bottom: 1px solid var(--bone-dark); color: var(--text-mid); }
+  .config-table td:first-child {
+    font-family: 'Barlow', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--orange);
+    letter-spacing: 0.5px;
   }
-  .vendor-table td.store-col a:hover { color: var(--orange-light); text-decoration: underline; }
-  .vendor-table td.price-col {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.9rem;
-    color: var(--cream);
-    font-weight: 500;
-  }
-  .vendor-table td.price-col.best { color: var(--orange-light); }
-  .tag-free {
-    background: rgba(90,180,120,0.15);
-    color: #7ecfa0;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    padding: 2px 7px;
-    border-radius: 2px;
-    letter-spacing: 0.05em;
-  }
-  .tag-paid {
-    background: rgba(255,255,255,0.06);
-    color: var(--olive-pale);
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    padding: 2px 7px;
-    border-radius: 2px;
-  }
-  .tag-instock {
-    color: #7ecfa0;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-  }
-  .tag-oos {
-    color: #e07070;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-  }
-  .tag-unknown {
-    color: var(--text-light);
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-  }
-  .best-badge {
+  .current-badge {
     background: var(--orange);
-    color: #fff;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
+    color: var(--white);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     padding: 2px 6px;
     border-radius: 2px;
     margin-left: 6px;
-    letter-spacing: 0.05em;
     vertical-align: middle;
   }
-  .report-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: rgba(255,255,255,0.25);
-    font-size: 0.9rem;
-    transition: color 0.2s;
-    padding: 2px 6px;
-  }
-  .report-btn:hover { color: #e07070; }
-  .vendor-summary {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255,255,255,0.08);
-  }
-  .vsummary-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 3px;
-    padding: 0.9rem;
-    text-align: center;
-  }
-  .vsummary-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--olive-pale);
-    margin-bottom: 0.3rem;
-  }
-  .vsummary-val {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
+  .sp-badge {
+    background: var(--olive-mid);
     color: var(--cream);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 2px;
+    margin-left: 4px;
+    vertical-align: middle;
   }
-  .vsummary-val.highlight { color: var(--orange-light); }
 
-  /* ── MEDIA GALLERY ── */
+  /* ── GALLERY ── */
+  .gallery-section { margin-bottom: 2.5rem; }
   .gallery-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 8px;
   }
   .gallery-item {
-    border: 1px solid var(--border);
+    background: var(--charcoal-mid);
     border-radius: 4px;
     overflow: hidden;
-    background: var(--charcoal-mid);
-    position: relative;
-    cursor: pointer;
     aspect-ratio: 4/3;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
-  .gallery-item:first-child {
-    grid-column: span 2;
-    grid-row: span 2;
-    aspect-ratio: unset;
-    min-height: 240px;
-  }
+  .gallery-item.main { grid-row: span 2; aspect-ratio: auto; min-height: 280px; }
   .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: opacity 0.2s;
-  }
-  .gallery-item:hover img { opacity: 0.85; }
-  .gallery-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(35,43,34,0.85));
-    color: var(--cream);
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.08em;
-    padding: 1rem 0.6rem 0.4rem;
-    text-transform: uppercase;
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  .gallery-item:hover .gallery-caption { opacity: 1; }
-  .gallery-img-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--charcoal-mid);
-    color: var(--olive-pale);
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
-    gap: 0.5rem;
+    object-fit: contain;
     padding: 1rem;
-    text-align: center;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
   }
-
-  /* ── VIDEO GRID ── */
-  .video-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  .video-card {
-    background: var(--charcoal-mid);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    overflow: hidden;
-    text-decoration: none;
-  }
-  .video-thumb {
-    position: relative;
-    aspect-ratio: 16/9;
-    background: var(--charcoal);
-    overflow: hidden;
-  }
-  .video-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .video-play-btn {
+  .gallery-label {
     position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .video-play-btn svg {
-    width: 44px;
-    height: 44px;
-    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.6));
-    transition: transform 0.2s;
-  }
-  .video-card:hover .video-play-btn svg { transform: scale(1.12); }
-  .video-card-meta {
-    padding: 0.75rem 0.9rem;
-    background: var(--bone);
-  }
-  .video-card-type {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.12em;
+    bottom: 8px;
+    left: 8px;
+    background: rgba(30,36,25,0.85);
+    color: var(--olive-pale);
+    font-size: 10px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--orange);
-    margin-bottom: 0.2rem;
-  }
-  .video-card-title {
-    font-size: 0.85rem;
-    color: var(--text-primary);
-    line-height: 1.4;
-    font-weight: 400;
-  }
-  .video-card-channel {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    margin-top: 0.25rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
   }
 
   /* ── DOCUMENTS ── */
   .docs-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
+    gap: 10px;
+    margin-bottom: 2.5rem;
   }
   .doc-card {
-    background: var(--bone);
-    border: 1px solid var(--border);
+    background: var(--white);
+    border: 1px solid var(--bone-dark);
     border-radius: 4px;
-    padding: 0.9rem 1rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
-    gap: 0.9rem;
+    gap: 12px;
     text-decoration: none;
-    transition: border-color 0.2s, background 0.2s;
+    transition: border-color 0.2s;
   }
-  .doc-card:hover { border-color: var(--orange); background: var(--olive-wash); }
+  .doc-card:hover { border-color: var(--orange); }
   .doc-icon {
     width: 36px;
     height: 36px;
-    background: var(--olive);
+    background: var(--olive-pale);
     border-radius: 3px;
-    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
   }
-  .doc-meta { flex: 1; min-width: 0; }
-  .doc-type {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--orange);
-    margin-bottom: 0.15rem;
+  .doc-icon svg { width: 18px; height: 18px; fill: var(--olive-dark); }
+  .doc-info h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--olive-dark);
+    margin-bottom: 2px;
   }
-  .doc-name {
-    font-size: 0.85rem;
-    color: var(--text-primary);
-    line-height: 1.3;
-    white-space: nowrap;
+  .doc-info p { font-size: 11px; color: var(--text-muted); }
+
+  /* ── ACCESSORIES ── */
+  .accessories-section { margin-bottom: 2.5rem; }
+  .acc-list {
+    background: var(--white);
+    border: 1px solid var(--bone-dark);
+    border-radius: 4px;
     overflow: hidden;
-    text-overflow: ellipsis;
   }
-  .doc-size {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    color: var(--text-light);
-    margin-top: 0.1rem;
+  .acc-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--bone-dark);
+    gap: 12px;
   }
-  footer {
-    background: var(--charcoal);
-    border-top: 2px solid var(--charcoal-mid);
-    padding: 2rem;
-    text-align: center;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--olive-pale);
-    letter-spacing: 0.06em;
-    margin-top: 0;
+  .acc-item:last-child { border-bottom: none; }
+  .acc-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--olive-dark);
+    margin-bottom: 2px;
   }
-  footer a { color: var(--orange-light); text-decoration: none; }
-  footer .footer-ffl {
-    margin-top: 0.5rem;
-    color: rgba(255,255,255,0.3);
-    font-size: 0.65rem;
+  .acc-note { font-size: 12px; color: var(--text-muted); }
+  .acc-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--olive-light);
+    flex-shrink: 0;
   }
 
+  /* ── SIDEBAR ── */
+  .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+
+  .sidebar-card {
+    background: var(--white);
+    border: 1px solid var(--bone-dark);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .sidebar-card-header {
+    background: var(--olive-dark);
+    padding: 12px 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--olive-pale);
+  }
+  .sidebar-card-body { padding: 1rem; }
+
+  .identity-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--bone);
+    font-size: 13px;
+  }
+  .identity-row:last-child { border-bottom: none; }
+  .identity-row .ident-label { color: var(--text-muted); font-size: 12px; }
+  .identity-row .ident-val {
+    font-weight: 600;
+    color: var(--olive-dark);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: right;
+  }
+  .ident-val.mono {
+    font-family: 'Barlow', monospace;
+    font-size: 12px;
+    background: var(--bone);
+    padding: 1px 6px;
+    border-radius: 2px;
+  }
+  .ident-val.status-active {
+    color: #3B6D11;
+    background: #EAF3DE;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .stat-box {
+    background: var(--bone);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+  }
+  .stat-val {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--olive-dark);
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .guarantee-box {
+    background: var(--olive-pale);
+    border: 1px solid var(--olive-light);
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .guarantee-box .g-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--olive-dark);
+    line-height: 1;
+  }
+  .guarantee-box .g-label {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--olive-mid);
+    margin-top: 4px;
+  }
+
+  .source-note {
+    font-size: 11px;
+    color: var(--text-muted);
+    padding: 0.75rem 1rem;
+    background: var(--bone);
+    border-top: 1px solid var(--bone-dark);
+    border-radius: 0 0 6px 6px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--charcoal);
+    color: var(--olive-light);
+    margin-top: 3rem;
+    border-top: 3px solid var(--orange);
+  }
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .footer-brand .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cream);
+    margin-bottom: 0.75rem;
+  }
+  .footer-brand .logo span { color: var(--orange); }
+  .footer-brand p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--olive-light);
+    max-width: 240px;
+  }
+  .footer-col h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--cream);
+    margin-bottom: 1rem;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 6px; }
+  .footer-col a {
+    color: var(--olive-light);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--orange); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+  }
+  .footer-bottom a { color: var(--text-muted); text-decoration: none; }
+  .footer-bottom a:hover { color: var(--orange); }
+  .origin-badge {
+    background: var(--charcoal-mid);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--olive-light);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 2px;
+  }
+
+  /* ── DIVIDER ── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--bone-dark);
+    margin: 2rem 0;
+  }
+
+  /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; }
-    .main-grid { grid-template-columns: 1fr; }
-    .features-grid { grid-template-columns: 1fr 1fr; }
-    .vendor-summary { grid-template-columns: 1fr 1fr; }
-    .nav-links { display: none; }
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-card { max-width: 480px; }
+    main { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-item.main { grid-row: auto; }
+    nav .nav-links { display: none; }
   }
 </style>
 </head>
@@ -843,643 +779,512 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-brand">Gun<span>.</span>Aggregator</a>
-  <div class="nav-links">
-    <a href="#">All Deals</a>
-    <a href="#">Rifles</a>
-    <a href="#">Handguns</a>
-    <a href="#">Ammo</a>
-    <a href="#">Optics</a>
-    <span class="nav-badge">Live Prices</span>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">Rifle<span>Compare</span></a>
+    <ul class="nav-links">
+      <li><a href="#">Rifles</a></li>
+      <li><a href="#">Pistols</a></li>
+      <li><a href="#">Optics</a></li>
+      <li><a href="#">Ammo</a></li>
+      <li><a href="#">Brands</a></li>
+      <li><a href="#" class="nav-cta">Compare Prices</a></li>
+    </ul>
   </div>
 </nav>
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
-  <a href="#">Home</a><span>›</span>
-  <a href="#">Rifles</a><span>›</span>
-  <a href="#">Bolt-Action</a><span>›</span>
-  <a href="#">Bergara</a><span>›</span>
-  B-14 Ridge .308 Win
+  <div style="max-width:1200px;margin:0 auto;">
+    <a href="#">Home</a><span>›</span>
+    <a href="#">Rifles</a><span>›</span>
+    <a href="#">Bolt-Action</a><span>›</span>
+    <a href="#">Bergara</a><span>›</span>
+    <a href="#">B-14 Series</a><span>›</span>
+    B-14 Ridge .308 Win — B14S501C
+  </div>
 </div>
 
 <!-- HERO -->
-<div class="hero">
-  <div class="hero-image">
-    <!-- SVG Rifle Illustration -->
-    <svg class="rifle-svg" viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg">
-      <!-- Stock -->
-      <path d="M20 120 C20 100 40 95 60 95 L180 95 L200 105 L200 130 L60 130 C40 130 20 140 20 120Z" fill="#3a4035" stroke="#5c6050" stroke-width="1"/>
-      <!-- Pistol grip -->
-      <path d="M170 110 L195 108 L200 130 L185 145 L168 145 L160 130Z" fill="#2f3a2e" stroke="#5c6050" stroke-width="1"/>
-      <!-- Action -->
-      <rect x="195" y="90" width="120" height="42" rx="4" fill="#4a5240" stroke="#7a8a6a" stroke-width="1"/>
-      <!-- Bolt handle -->
-      <line x1="280" y1="90" x2="295" y2="72" stroke="#8a9a7a" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="295" cy="68" r="5" fill="#8a9a7a"/>
-      <!-- Barrel -->
-      <rect x="315" y="99" width="220" height="14" rx="3" fill="#3a4a38" stroke="#5c6a50" stroke-width="1"/>
-      <!-- Muzzle threads -->
-      <rect x="520" y="99" width="15" height="14" rx="1" fill="#2f3a2e" stroke="#7a8a6a" stroke-width="0.5"/>
-      <line x1="521" y1="101" x2="521" y2="111" stroke="#7a8a6a" stroke-width="0.5"/>
-      <line x1="524" y1="101" x2="524" y2="111" stroke="#7a8a6a" stroke-width="0.5"/>
-      <line x1="527" y1="101" x2="527" y2="111" stroke="#7a8a6a" stroke-width="0.5"/>
-      <line x1="530" y1="101" x2="530" y2="111" stroke="#7a8a6a" stroke-width="0.5"/>
-      <!-- Trigger guard -->
-      <path d="M220 130 Q230 155 250 155 Q270 155 280 130" fill="none" stroke="#7a8a6a" stroke-width="1.5"/>
-      <!-- Trigger -->
-      <line x1="248" y1="130" x2="248" y2="148" stroke="#c4521a" stroke-width="2" stroke-linecap="round"/>
-      <!-- Scope rail markings -->
-      <rect x="215" y="89" width="95" height="4" rx="1" fill="#5c6650" stroke="#7a8a6a" stroke-width="0.5"/>
-      <line x1="230" y1="89" x2="230" y2="93" stroke="#8a9a7a" stroke-width="1"/>
-      <line x1="245" y1="89" x2="245" y2="93" stroke="#8a9a7a" stroke-width="1"/>
-      <line x1="260" y1="89" x2="260" y2="93" stroke="#8a9a7a" stroke-width="1"/>
-      <line x1="275" y1="89" x2="275" y2="93" stroke="#8a9a7a" stroke-width="1"/>
-      <line x1="290" y1="89" x2="290" y2="93" stroke="#8a9a7a" stroke-width="1"/>
-      <line x1="305" y1="89" x2="305" y2="93" stroke="#8a9a7a" stroke-width="1"/>
-      <!-- Floor plate -->
-      <rect x="225" y="130" width="35" height="8" rx="2" fill="#2f3a2e" stroke="#5c6050" stroke-width="0.5"/>
-      <!-- Safety -->
-      <rect x="285" y="90" width="12" height="5" rx="1" fill="#c4521a"/>
-      <!-- Stock texture lines -->
-      <line x1="50" y1="100" x2="50" y2="125" stroke="#4a5240" stroke-width="0.5" opacity="0.5"/>
-      <line x1="70" y1="98" x2="70" y2="125" stroke="#4a5240" stroke-width="0.5" opacity="0.5"/>
-      <line x1="90" y1="97" x2="90" y2="125" stroke="#4a5240" stroke-width="0.5" opacity="0.5"/>
-      <line x1="110" y1="96" x2="110" y2="125" stroke="#4a5240" stroke-width="0.5" opacity="0.5"/>
-      <line x1="130" y1="95" x2="130" y2="125" stroke="#4a5240" stroke-width="0.5" opacity="0.5"/>
-      <!-- Bergara text on barrel -->
-      <text x="360" y="108" font-family="DM Mono, monospace" font-size="7" fill="#7a8a6a" letter-spacing="2">BERGARA  B-14  RIDGE  .308 WIN</text>
-    </svg>
-  </div>
-  <div class="hero-content">
-    <div class="hero-series">Bergara · B-14 Series · Ridge · Bolt-Action Rifle</div>
-    <h1 class="hero-title">Bergara B-14 Ridge<br>.308 Win 20" Rifle<br><span style="color:var(--orange-light);font-size:1.3rem;font-weight:400;letter-spacing:0.04em">B14S501C</span></h1>
-    <p class="hero-subtitle">Mountain Tough. Sub-MOA Guaranteed. Spanish-made precision for serious big-game hunters — Graphite Black Cerakote, 4140 CrMo #5 barrel, threaded 5/8×24.</p>
-    <div class="hero-ids">
-      <div class="hero-id"><strong>MPN</strong> B14S501C</div>
-      <div class="hero-id"><strong>UPC</strong> 043125015719</div>
-      <div class="hero-id"><strong>Cal.</strong> .308 Win / 7.62×51mm</div>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">B-14 Series · Bolt-Action Hunting Rifle</div>
+      <div class="hero-series">Bergara Rifles</div>
+      <h1>B-14 Ridge</h1>
+      <div class="hero-caliber">.308 Winchester</div>
+      <p class="hero-desc">
+        World-class Bergara barrel accuracy delivered in an affordable hunting package. 
+        Built in Bergara, Spain on a fully automated production line, the Ridge brings 
+        sub-MOA precision to serious big-game hunters without the premium price tag.
+      </p>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <label>MPN</label>
+          <value class="mpn">B14S501C</value>
+        </div>
+        <div class="meta-item">
+          <label>UPC</label>
+          <value class="mpn">043125015719</value>
+        </div>
+        <div class="meta-item">
+          <label>Origin</label>
+          <value>Spain</value>
+        </div>
+        <div class="meta-item">
+          <label>MSRP</label>
+          <value>$999.00</value>
+        </div>
+      </div>
     </div>
-    <div class="hero-price-block">
-      <div class="hero-price-label">Lowest price found</div>
-      <div class="hero-price">$735.99</div>
-      <div class="hero-price-range">Range: $735.99 – $949.99 &nbsp;·&nbsp; MSRP $949.00</div>
-    </div>
-    <div class="hero-ctas">
-      <a href="#vendor-table" class="btn-primary">&#9660; See All Vendors</a>
-      <a href="https://www.bergara.online/us/rifles/b14/ridge-rifle/" target="_blank" class="btn-secondary">Official Page ↗</a>
+
+    <div class="hero-card">
+      <div class="hero-img-wrap">
+        <div class="accuracy-badge">Sub-MOA Guarantee</div>
+        <img src="https://www.bergara.online/us/wp-content/uploads/sites/6/2023/01/ridgemobile-scaled.jpg"
+             alt="Bergara B-14 Ridge .308 Win"
+             onerror="this.style.display='none';this.parentElement.innerHTML+='<div style=\'color:#8A9A7A;font-family:Barlow Condensed,sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;\'>Image — B14S501C</div>'">
+      </div>
+      <div class="hero-price-row">
+        <div>
+          <div class="price-label">MSRP Starting At</div>
+          <div class="price-val"><span class="price-from">from</span>$999</div>
+        </div>
+        <a href="#compare" class="btn-compare">Compare Prices</a>
+      </div>
+      <div class="hero-btns">
+        <a href="https://www.bergara.online/us/rifles/b14/ridge-rifle/" target="_blank" class="btn-secondary">Official Page</a>
+        <a href="#specs" class="btn-secondary">Full Specs</a>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- MAIN CONTENT -->
-<div class="container">
-  <div class="main-grid">
+<main>
+  <article>
 
-    <!-- LEFT COLUMN -->
-    <div>
-
-      <!-- KEY FEATURES -->
-      <h2 class="section-head">Key Features</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#c8cdb8" stroke-width="1.5"/><path d="M6 9l2 2 4-4" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="feature-title">Sub-MOA Guarantee</div>
-          <div class="feature-desc">Guaranteed 1.0 MOA or better at 100 yards with factory match-grade ammunition.</div>
+    <!-- FEATURES -->
+    <div class="section-label">Why It Stands Out</div>
+    <h2 class="section-title">Key Features</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="3" y="7" width="12" height="7" rx="1.5" stroke="#c8cdb8" stroke-width="1.5"/><path d="M6 7V5a3 3 0 016 0v2" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <div class="feature-title">Graphite Cerakote</div>
-          <div class="feature-desc">Graphite Black Cerakote barrel and receiver finish for corrosion resistance in all weather.</div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2l2 5h5l-4 3 1.5 5L9 12l-4.5 3L6 10 2 7h5z" stroke="#c8cdb8" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="feature-title">Performance Trigger</div>
-          <div class="feature-desc">Bergara curved Performance trigger, factory set at ~3 lbs for a crisp, clean pull.</div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><line x1="9" y1="2" x2="9" y2="16" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round"/><line x1="4" y1="6" x2="14" y2="6" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <div class="feature-title">Threaded Muzzle 5/8×24</div>
-          <div class="feature-desc">Factory-threaded 5/8×24 muzzle accepts suppressors, muzzle brakes, and flash hiders.</div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="5" width="14" height="8" rx="2" stroke="#c8cdb8" stroke-width="1.5"/><line x1="5" y1="8" x2="5" y2="10" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round"/><line x1="9" y1="7" x2="9" y2="11" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round"/><line x1="13" y1="8" x2="13" y2="10" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <div class="feature-title">SoftTouch Stock</div>
-          <div class="feature-desc">Glass-fiber reinforced polymer stock with SoftTouch coating — stable epoxy pillars molded in.</div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9a6 6 0 1012 0A6 6 0 003 9z" stroke="#c8cdb8" stroke-width="1.5"/><path d="M9 6v3l2 2" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <div class="feature-title">Rem 700 Compatible</div>
-          <div class="feature-desc">Drilled and tapped to accept Remington 700-style rings and bases. Hinged floor plate.</div>
+        <div>
+          <h4>Bergara Barrel</h4>
+          <p>4140 CrMo steel, No. 5 taper, Graphite Black Cerakote® — the same barrel quality trusted by top-tier OEM manufacturers worldwide.</p>
         </div>
       </div>
-
-      <!-- DESCRIPTION -->
-      <h2 class="section-head">Overview</h2>
-      <div class="desc-block">
-        The Bergara B-14 Ridge is the standard-bearer of the B-14 hunting series — built in Bergara, Spain using the same precision barrel-making technology that supplies custom rifle builders across Europe and North America. It delivers production-rifle affordability with near-custom accuracy thanks to the legendary Bergara barrel, a proprietary two-lug B-14 action, and a glass-fiber-reinforced polymer stock engineered for real-world hunting conditions.
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div>
+          <h4>B-14 Action</h4>
+          <p>Super-smooth two-lug system with sliding plate extractor and coned bolt nose for reliable feeding and extraction in any condition.</p>
+        </div>
       </div>
-      <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:1rem; line-height:1.8;">
-        The B-14 action uses a two-lug system with a sliding plate extractor and a coned bolt nose and breech — ensuring smooth, positive feeding and extraction under field conditions. The barrel is 4140 CrMo steel, finished in Graphite Black Cerakote, with a #5 contour and threaded 5/8×24 muzzle. Solid epoxy pillars are permanently molded into the stock for repeatable, stable bedding.
-      </p>
-      <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:2rem; line-height:1.8;">
-        Available in 13 calibers from .22-250 through .300 Win Mag and 7mm PRC. The B14S501C is chambered in .308 Winchester / 7.62×51mm with a 20" barrel and 1:10" twist rate.
-      </p>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div>
+          <h4>Sub-MOA Guarantee</h4>
+          <p>Factory guaranteed to produce groups of 1.0 MOA or less at 100 yards using quality factory match-grade ammunition.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h4>Performance Trigger</h4>
+          <p>Bergara curved performance trigger — crisp, clean pull set at approximately 3 lbs from factory. Adjustable 2–5 lbs.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        </div>
+        <div>
+          <h4>Synthetic Stock</h4>
+          <p>Molded glass fiber reinforced polymer, American-style. Dark gray with black/white speckle and SoftTouch grip coating. Pillar-bedded.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 002 8.5c0 2.3 1.5 4.05 3 5.5l7 7 7-7z"/></svg>
+        </div>
+        <div>
+          <h4>Rem 700 Compatible</h4>
+          <p>Factory drilled and tapped to fit Remington 700-style rings and bases — broad scope mount compatibility. Threaded muzzle 5/8×24.</p>
+        </div>
+      </div>
+    </div>
 
-      <!-- SPECS -->
-      <h2 class="section-head">Specifications</h2>
+    <!-- SPECS -->
+    <div id="specs" class="specs-section">
+      <div class="section-label">Technical Data</div>
+      <h2 class="section-title">Full Specifications</h2>
       <table class="specs-table">
-        <tr><td>Brand</td><td>Bergara</td></tr>
-        <tr><td>Model / Series</td><td>B-14 Ridge</td></tr>
-        <tr><td>MPN</td><td><span style="font-family:'DM Mono',monospace">B14S501C</span></td></tr>
-        <tr><td>UPC</td><td><span style="font-family:'DM Mono',monospace">043125015719</span></td></tr>
-        <tr><td>Action</td><td>Bolt-Action — Two-lug, sliding plate extractor, coned bolt nose</td></tr>
-        <tr><td>Caliber</td><td>.308 Winchester / 7.62×51mm NATO</td></tr>
-        <tr><td>Barrel Length</td><td>20" (#5 Contour)</td></tr>
-        <tr><td>Twist Rate</td><td>1:10"</td></tr>
-        <tr><td>Overall Length</td><td>39.5"</td></tr>
-        <tr><td>Weight</td><td>7.4 – 7.9 lbs (unloaded)</td></tr>
-        <tr><td>Magazine</td><td>Internal box, hinged floor plate — 4+1 capacity</td></tr>
-        <tr><td>Stock</td><td>Glass-fiber reinforced polymer, American style, Fixed w/ SoftTouch</td></tr>
-        <tr><td>Stock Finish</td><td>Black / Gray Speckled</td></tr>
-        <tr><td>Barrel Finish</td><td>Graphite Black Cerakote</td></tr>
-        <tr><td>Receiver Finish</td><td>Graphite Black Cerakote (Stainless Steel receiver)</td></tr>
-        <tr><td>Trigger</td><td>Bergara Performance Trigger — factory set ~3 lbs</td></tr>
-        <tr><td>Safety</td><td>Two-Position Thumb Safety</td></tr>
-        <tr><td>Muzzle Thread</td><td>5/8×24</td></tr>
-        <tr><td>Scope Base</td><td>Drilled & Tapped for Remington 700-style rings &amp; bases</td></tr>
-        <tr><td>Hand</td><td>Right Hand</td></tr>
-        <tr><td>Country of Origin</td><td>Spain (Bergara, Basque Country)</td></tr>
-        <tr><td>MSRP</td><td>$949.00</td></tr>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Action Type</td><td>Bolt-Action</td></tr>
+          <tr><td>Caliber / Chambering</td><td>.308 Winchester (7.62×51 NATO)</td></tr>
+          <tr><td>Barrel Length</td><td>20 inches</td></tr>
+          <tr><td>Barrel Profile</td><td>#5 Contour — Threaded</td></tr>
+          <tr><td>Barrel Material</td><td>4140 Chrome-Moly Steel</td></tr>
+          <tr><td>Barrel Finish</td><td>Graphite Black Cerakote®</td></tr>
+          <tr><td>Twist Rate</td><td>1:10" RH</td></tr>
+          <tr><td>Muzzle Thread</td><td>5/8×24 TPI</td></tr>
+          <tr><td>Overall Length</td><td>39.5 inches</td></tr>
+          <tr><td>Weight (Unloaded)</td><td>7.4 lbs</td></tr>
+          <tr><td>Stock Material</td><td>Glass Fiber Reinforced Polymer</td></tr>
+          <tr><td>Stock Description</td><td>American-style synthetic, SoftTouch finish, Dark Gray / Black-White Speckle</td></tr>
+          <tr><td>Bedding</td><td>Solid epoxy pillar bedded (molded in)</td></tr>
+          <tr><td>Trigger</td><td>Bergara Performance Trigger</td></tr>
+          <tr><td>Trigger Pull</td><td>~3 lbs factory; adjustable 2–5 lbs</td></tr>
+          <tr><td>Magazine Type</td><td>Internal box, hinged floor plate</td></tr>
+          <tr><td>Capacity</td><td>4 rounds (standard)</td></tr>
+          <tr><td>Action Finish</td><td>Graphite Black Cerakote®</td></tr>
+          <tr><td>Receiver Material</td><td>Stainless Steel</td></tr>
+          <tr><td>Safety</td><td>Two-position</td></tr>
+          <tr><td>Scope Mount</td><td>Drilled & tapped for Remington 700-style bases (6-48 screws)</td></tr>
+          <tr><td>Sling Swivel Studs</td><td>Yes</td></tr>
+          <tr><td>Hand</td><td>Right Hand</td></tr>
+          <tr><td>Country of Origin</td><td>Spain (Bergara, Basque Country)</td></tr>
+          <tr><td>Warranty</td><td>Limited Lifetime</td></tr>
+          <tr><td>MSRP</td><td>$999.00</td></tr>
+          <tr><td>Accuracy Guarantee</td><td>Sub-MOA @ 100 yds with factory match-grade ammo</td></tr>
+        </tbody>
       </table>
+    </div>
 
-      <!-- VARIANTS -->
-      <h2 class="section-head">Available Configurations — B-14 Ridge</h2>
-      <div class="variants-wrap">
-        <table class="variants-table">
+    <hr class="divider">
+
+    <!-- CONFIGURATIONS -->
+    <div class="config-section">
+      <div class="section-label">All Variants — B-14 Ridge Family</div>
+      <h2 class="section-title">Available Configurations</h2>
+      <div style="overflow-x:auto;">
+        <table class="config-table">
           <thead>
             <tr>
               <th>MPN</th>
-              <th>UPC</th>
               <th>Caliber</th>
               <th>Barrel</th>
+              <th>OA Length</th>
+              <th>Weight</th>
               <th>Twist</th>
               <th>Capacity</th>
-              <th>Status</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="active">
-              <td><span class="mpn-code">B14S501C</span> <span class="badge-active">This page</span></td>
-              <td style="font-family:'DM Mono',monospace;font-size:0.78rem">043125015719</td>
-              <td>.308 Win / 7.62×51mm</td>
-              <td>20"</td>
-              <td>1:10"</td>
-              <td>4+1</td>
-              <td><span class="tag-instock">● In Production</span></td>
+            <tr class="highlight-row">
+              <td>B14S501C <span class="current-badge">This Item</span></td>
+              <td>.308 Win</td><td>20"</td><td>39.5"</td><td>7.4 lbs</td><td>1:10</td><td>4 std</td>
             </tr>
-            <tr>
-              <td><span class="mpn-code">B14S502C</span></td>
-              <td style="font-family:'DM Mono',monospace;font-size:0.78rem">043125015726</td>
-              <td>6.5 Creedmoor</td>
-              <td>22"</td>
-              <td>1:8"</td>
-              <td>4+1</td>
-              <td><span class="tag-instock">● In Production</span></td>
-            </tr>
-            <tr>
-              <td><span class="mpn-code">B14S503C</span></td>
-              <td style="font-family:'DM Mono',monospace;font-size:0.78rem">043125015733</td>
-              <td>.243 Win</td>
-              <td>22"</td>
-              <td>1:10"</td>
-              <td>4+1</td>
-              <td><span class="tag-instock">● In Production</span></td>
-            </tr>
-            <tr>
-              <td><span class="mpn-code">B14S507C</span></td>
-              <td style="font-family:'DM Mono',monospace;font-size:0.78rem">043125015757</td>
-              <td>7mm-08 Rem</td>
-              <td>22"</td>
-              <td>1:9.5"</td>
-              <td>4+1</td>
-              <td><span class="tag-instock">● In Production</span></td>
-            </tr>
-            <tr>
-              <td><span class="mpn-code">B14S504C</span></td>
-              <td style="font-family:'DM Mono',monospace;font-size:0.78rem">–</td>
-              <td>.22-250 Rem</td>
-              <td>22"</td>
-              <td>1:12"</td>
-              <td>4+1</td>
-              <td><span class="tag-instock">● In Production</span></td>
-            </tr>
-            <tr>
-              <td><span class="mpn-code">B14L501C</span></td>
-              <td style="font-family:'DM Mono',monospace;font-size:0.78rem">–</td>
-              <td>.30-06 Springfield</td>
-              <td>22"</td>
-              <td>1:10"</td>
-              <td>4+1</td>
-              <td><span class="tag-instock">● In Production</span></td>
-            </tr>
-            <tr>
-              <td><span class="mpn-code">B14L502C</span></td>
-              <td style="font-family:'DM Mono',monospace;font-size:0.78rem">–</td>
-              <td>.270 Win</td>
-              <td>24"</td>
-              <td>1:10"</td>
-              <td>4+1</td>
-              <td><span class="tag-instock">● In Production</span></td>
-            </tr>
-            <tr>
-              <td><span class="mpn-code">B14LM501C</span></td>
-              <td style="font-family:'DM Mono',monospace;font-size:0.78rem">–</td>
-              <td>.300 Win Mag</td>
-              <td>24"</td>
-              <td>1:10"</td>
-              <td>3+1</td>
-              <td><span class="tag-instock">● In Production</span></td>
-            </tr>
-            <tr>
-              <td><span class="mpn-code">B14LM5013C</span></td>
-              <td style="font-family:'DM Mono',monospace;font-size:0.78rem">–</td>
-              <td>7mm PRC</td>
-              <td>22"</td>
-              <td>1:8"</td>
-              <td>3+1</td>
-              <td><span class="tag-instock">● In Production</span></td>
-            </tr>
-            <tr>
-              <td><span class="mpn-code">B14S506C</span></td>
-              <td style="font-family:'DM Mono',monospace;font-size:0.78rem">–</td>
-              <td>.450 Bushmaster</td>
-              <td>20"</td>
-              <td>1:24"</td>
-              <td>3+1</td>
-              <td><span class="tag-instock">● In Production</span></td>
-            </tr>
+            <tr><td>B14S502C</td><td>6.5 Creedmoor</td><td>22"</td><td>41.5"</td><td>7.5 lbs</td><td>1:8</td><td>4 std</td></tr>
+            <tr><td>B14S503C</td><td>.243 Win</td><td>22"</td><td>41.5"</td><td>7.5 lbs</td><td>1:10</td><td>4 std</td></tr>
+            <tr><td>B14S504C</td><td>.22-250 Rem</td><td>22"</td><td>41.5"</td><td>7.5 lbs</td><td>1:9</td><td>4 std</td></tr>
+            <tr><td>B14S506C</td><td>450 Bushmaster</td><td>20"</td><td>39.5"</td><td>7.4 lbs</td><td>1:24</td><td>3 std</td></tr>
+            <tr><td>B14S507C</td><td>7mm-08 Rem</td><td>22"</td><td>41.5"</td><td>7.5 lbs</td><td>1:9.5</td><td>4 std</td></tr>
+            <tr><td>B14SM509C</td><td>6.5 PRC</td><td>24"</td><td>43.5"</td><td>7.6 lbs</td><td>1:8</td><td>2 mag</td></tr>
+            <tr><td>B14L501C</td><td>.30-06 Sprg</td><td>24"</td><td>44"</td><td>7.7 lbs</td><td>1:10</td><td>4 std</td></tr>
+            <tr><td>B14L502C</td><td>.270 Win</td><td>24"</td><td>44"</td><td>7.4 lbs</td><td>1:10</td><td>4 std</td></tr>
+            <tr><td>B14LM501C</td><td>.300 Win Mag</td><td>24"</td><td>44"</td><td>7.7 lbs</td><td>1:10</td><td>3 mag</td></tr>
+            <tr><td>B14LM502C</td><td>7mm Rem Mag</td><td>24"</td><td>44"</td><td>7.7 lbs</td><td>1:9.5</td><td>3 mag</td></tr>
+            <tr><td>B14LM508C</td><td>.300 PRC</td><td>24"</td><td>44"</td><td>7.7 lbs</td><td>1:9</td><td>2 mag</td></tr>
+            <tr><td>B14LM5013C</td><td>7 PRC</td><td>22"</td><td>42"</td><td>7.6 lbs</td><td>1:8</td><td>3 mag</td></tr>
+            <tr><td>B14S511C <span class="sp-badge">SP</span></td><td>.308 Win</td><td>18"</td><td>37.5"</td><td>7.2 lbs</td><td>1:10</td><td>4 std</td></tr>
+            <tr><td>B14S512C <span class="sp-badge">SP</span></td><td>6.5 Creedmoor</td><td>18"</td><td>37.5"</td><td>7.2 lbs</td><td>1:8</td><td>4 std</td></tr>
+            <tr><td>B14S513C <span class="sp-badge">SP</span></td><td>.223 Rem</td><td>18"</td><td>37.5"</td><td>7.2 lbs</td><td>1:9</td><td>4 std</td></tr>
           </tbody>
         </table>
       </div>
+      <p style="font-size:12px;color:var(--text-muted);margin-top:8px;"><strong>SP</strong> = Special Purpose (short barrel). All variants share identical stock, action, finish and guarantee. MSRP $999 across all configurations.</p>
+    </div>
 
-      <!-- PRODUCT IMAGES -->
-      <h2 class="section-head">Product Images</h2>
+    <hr class="divider">
+
+    <!-- GALLERY -->
+    <div class="gallery-section">
+      <div class="section-label">Product Images</div>
+      <h2 class="section-title">Gallery</h2>
       <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="https://www.bergara.online/en/wp-content/uploads/sites/5/2021/04/B14S501C.png" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt="Bergara B-14 Ridge B14S501C Primary">
-          <div class="gallery-img-placeholder" style="display:none"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="#7a8a6a" stroke-width="1.5"/><circle cx="11" cy="13" r="3" stroke="#7a8a6a" stroke-width="1.5"/><path d="M2 22l8-6 5 4 5-5 10 7" stroke="#7a8a6a" stroke-width="1.5" stroke-linejoin="round"/></svg>Primary — Right Profile</div>
-          <div class="gallery-caption">Primary — Right Profile</div>
+        <div class="gallery-item main">
+          <img src="https://www.bergara.online/us/wp-content/uploads/sites/6/2023/01/ridgelandingimage1-scaled.jpg" alt="Bergara B-14 Ridge — Field" onerror="this.style.opacity='0.3'">
+          <span class="gallery-label">Primary</span>
         </div>
         <div class="gallery-item">
-          <img src="https://www.bergara.online/en/wp-content/uploads/sites/5/2024/08/B14S501C-scaled.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt="B-14 Ridge Left Profile">
-          <div class="gallery-img-placeholder" style="display:none"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="#7a8a6a" stroke-width="1.5"/><circle cx="11" cy="13" r="3" stroke="#7a8a6a" stroke-width="1.5"/><path d="M2 22l8-6 5 4 5-5 10 7" stroke="#7a8a6a" stroke-width="1.5"/></svg>Left Profile</div>
-          <div class="gallery-caption">Left Profile</div>
+          <img src="https://www.bergara.online/us/wp-content/uploads/sites/6/2018/01/Ridge-1200x800.png" alt="Bergara B-14 Ridge — Profile" onerror="this.style.opacity='0.3'">
+          <span class="gallery-label">Full Profile</span>
         </div>
         <div class="gallery-item">
-          <img src="https://cdn11.bigcommerce.com/s-oo2i5a0bft/images/stencil/1280x1280/products/75453/135226/B14S501C__87038.1694099453.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt="B-14 Action Detail">
-          <div class="gallery-img-placeholder" style="display:none"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="#7a8a6a" stroke-width="1.5"/><circle cx="11" cy="13" r="3" stroke="#7a8a6a" stroke-width="1.5"/><path d="M2 22l8-6 5 4 5-5 10 7" stroke="#7a8a6a" stroke-width="1.5"/></svg>Action Detail</div>
-          <div class="gallery-caption">B-14 Action Detail</div>
+          <img src="https://www.bergara.online/us/wp-content/uploads/sites/6/2018/01/B-14-Ridge-muzzle-11-30-17.png" alt="Muzzle detail" onerror="this.style.opacity='0.3'">
+          <span class="gallery-label">Muzzle</span>
         </div>
         <div class="gallery-item">
-          <img src="https://cdn11.bigcommerce.com/s-oo2i5a0bft/images/stencil/1280x1280/products/75453/135227/B14S501C_2__54879.1694099453.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt="Stock & Trigger Detail">
-          <div class="gallery-img-placeholder" style="display:none"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="#7a8a6a" stroke-width="1.5"/><circle cx="11" cy="13" r="3" stroke="#7a8a6a" stroke-width="1.5"/><path d="M2 22l8-6 5 4 5-5 10 7" stroke="#7a8a6a" stroke-width="1.5"/></svg>Stock & Trigger</div>
-          <div class="gallery-caption">SoftTouch Stock & Trigger</div>
+          <img src="https://www.bergara.online/us/wp-content/uploads/sites/6/2018/01/B-14-Ridge-Bottom-Metal-11-30-17.png" alt="Floor plate" onerror="this.style.opacity='0.3'">
+          <span class="gallery-label">Floor Plate</span>
         </div>
         <div class="gallery-item">
-          <img src="https://cdn11.bigcommerce.com/s-oo2i5a0bft/images/stencil/1280x1280/products/75453/135228/B14S501C_3__68325.1694099453.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt="Muzzle & Barrel Detail">
-          <div class="gallery-img-placeholder" style="display:none"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="#7a8a6a" stroke-width="1.5"/><circle cx="11" cy="13" r="3" stroke="#7a8a6a" stroke-width="1.5"/><path d="M2 22l8-6 5 4 5-5 10 7" stroke="#7a8a6a" stroke-width="1.5"/></svg>Muzzle Detail</div>
-          <div class="gallery-caption">Threaded Muzzle 5/8×24</div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://cdn11.bigcommerce.com/s-oo2i5a0bft/images/stencil/1280x1280/products/75453/135229/B14S501C_4__14596.1694099453.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt="Floor Plate Detail">
-          <div class="gallery-img-placeholder" style="display:none"><svg width="24" height="24" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="28" height="20" rx="3" stroke="#7a8a6a" stroke-width="1.5"/><circle cx="11" cy="13" r="3" stroke="#7a8a6a" stroke-width="1.5"/><path d="M2 22l8-6 5 4 5-5 10 7" stroke="#7a8a6a" stroke-width="1.5"/></svg>Floor Plate</div>
-          <div class="gallery-caption">Hinged Floor Plate</div>
+          <img src="https://www.bergara.online/us/wp-content/uploads/sites/6/2023/01/ridgeboxes-scaled.jpg" alt="Variants overview" onerror="this.style.opacity='0.3'">
+          <span class="gallery-label">Lineup</span>
         </div>
       </div>
-      <p style="font-size:0.75rem;color:var(--text-light);font-family:'DM Mono',monospace;letter-spacing:0.04em;margin-bottom:2rem">Product images © Bergara USA. Sourced from <a href="https://www.bergara.online/us/rifles/b14/ridge-rifle/" target="_blank" style="color:var(--orange)">bergara.online</a> and authorized dealer listings.</p>
+    </div>
 
-      <!-- RELATED VIDEOS -->
-      <h2 class="section-head">Related Videos</h2>
-      <div class="video-grid">
-        <a class="video-card" href="https://www.youtube.com/watch?v=NOk_E6Fh9-Y" target="_blank">
-          <div class="video-thumb">
-            <img src="https://img.youtube.com/vi/NOk_E6Fh9-Y/hqdefault.jpg" alt="Bergara B-14 Wilderness Ridge Review">
-            <div class="video-play-btn"><svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="22" fill="rgba(196,82,26,0.9)"/><polygon points="17,13 35,22 17,31" fill="white"/></svg></div>
-          </div>
-          <div class="video-card-meta">
-            <div class="video-card-type">Full Review</div>
-            <div class="video-card-title">Bergara B-14 Wilderness Ridge — Full Review &amp; Range Test</div>
-            <div class="video-card-channel">iReviewGear · YouTube</div>
-          </div>
-        </a>
-        <a class="video-card" href="https://www.youtube.com/watch?v=6zQkDl4Z0bA" target="_blank">
-          <div class="video-thumb">
-            <img src="https://img.youtube.com/vi/6zQkDl4Z0bA/hqdefault.jpg" alt="Bergara B14 Ridge Overview">
-            <div class="video-play-btn"><svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="22" fill="rgba(196,82,26,0.9)"/><polygon points="17,13 35,22 17,31" fill="white"/></svg></div>
-          </div>
-          <div class="video-card-meta">
-            <div class="video-card-type">Overview / Features</div>
-            <div class="video-card-title">Bergara B-14 Ridge — Features Overview &amp; Accuracy Walkthrough</div>
-            <div class="video-card-channel">Bergara USA · YouTube</div>
-          </div>
-        </a>
-        <a class="video-card" href="https://www.youtube.com/results?search_query=Bergara+B14+Ridge+308+review" target="_blank">
-          <div class="video-thumb" style="background:var(--olive);display:flex;align-items:center;justify-content:center">
-            <div style="text-align:center;color:var(--olive-pale);font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;padding:1rem"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" style="display:block;margin:0 auto 0.5rem"><rect x="1" y="5" width="26" height="18" rx="4" fill="#c4521a"/><polygon points="11,9 21,14 11,19" fill="white"/></svg>More .308 Win<br>Reviews on YouTube</div>
-          </div>
-          <div class="video-card-meta">
-            <div class="video-card-type">Community Reviews</div>
-            <div class="video-card-title">Search: Bergara B14 Ridge .308 Win Review &amp; Accuracy Tests</div>
-            <div class="video-card-channel">YouTube Search ↗</div>
-          </div>
-        </a>
-        <a class="video-card" href="https://www.youtube.com/results?search_query=Bergara+B14S501C+unboxing" target="_blank">
-          <div class="video-thumb" style="background:var(--charcoal-mid);display:flex;align-items:center;justify-content:center">
-            <div style="text-align:center;color:var(--olive-pale);font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;padding:1rem"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" style="display:block;margin:0 auto 0.5rem"><rect x="1" y="5" width="26" height="18" rx="4" fill="#5c6650"/><polygon points="11,9 21,14 11,19" fill="white"/></svg>B14S501C<br>Unboxing Videos</div>
-          </div>
-          <div class="video-card-meta">
-            <div class="video-card-type">Unboxing</div>
-            <div class="video-card-title">Search: Bergara B14S501C Unboxing &amp; First Impressions</div>
-            <div class="video-card-channel">YouTube Search ↗</div>
-          </div>
-        </a>
-      </div>
+    <hr class="divider">
 
-      <!-- RELATED DOCUMENTS -->
-      <h2 class="section-head">Documents &amp; Downloads</h2>
+    <!-- DOCUMENTS -->
+    <div>
+      <div class="section-label">Resources</div>
+      <h2 class="section-title">Documents & Downloads</h2>
       <div class="docs-grid">
-        <a class="doc-card" href="https://www.bergara.online/wp-content/uploads/2018/04/B14_Manual.pdf" target="_blank">
-          <div class="doc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="2" width="12" height="16" rx="1.5" stroke="#c8cdb8" stroke-width="1.5"/><line x1="7" y1="7" x2="13" y2="7" stroke="#c8cdb8" stroke-width="1"/><line x1="7" y1="10" x2="13" y2="10" stroke="#c8cdb8" stroke-width="1"/><line x1="7" y1="13" x2="11" y2="13" stroke="#c8cdb8" stroke-width="1"/></svg></div>
-          <div class="doc-meta"><div class="doc-type">Owner's Manual · PDF</div><div class="doc-name">B14 Series User Manual</div><div class="doc-size">Official Bergara · bergara.online</div></div>
+        <a class="doc-card" href="https://www.bergara.online/us/support/user-manuals/" target="_blank">
+          <div class="doc-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div class="doc-info">
+            <h4>Owner's Manuals</h4>
+            <p>Official Bergara user manuals page</p>
+          </div>
         </a>
-        <a class="doc-card" href="https://www.bergara.online/en/wp-content/uploads/sites/5/2026/01/2026-Bergara-Catalog_web_INT.pdf" target="_blank">
-          <div class="doc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="2" width="12" height="16" rx="1.5" stroke="#c8cdb8" stroke-width="1.5"/><line x1="7" y1="7" x2="13" y2="7" stroke="#c8cdb8" stroke-width="1"/><line x1="7" y1="10" x2="13" y2="10" stroke="#c8cdb8" stroke-width="1"/><line x1="7" y1="13" x2="11" y2="13" stroke="#c8cdb8" stroke-width="1"/></svg></div>
-          <div class="doc-meta"><div class="doc-type">2026 Catalog · PDF</div><div class="doc-name">2026 Bergara Full Catalog</div><div class="doc-size">B-14 Ridge on pages 33–35</div></div>
+        <a class="doc-card" href="https://www.bergara.online/us/support/warranty/" target="_blank">
+          <div class="doc-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="doc-info">
+            <h4>Warranty Information</h4>
+            <p>Limited lifetime warranty details</p>
+          </div>
         </a>
-        <a class="doc-card" href="https://www.bergara.online/us/rifles/b14/ridge-rifle/" target="_blank">
-          <div class="doc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="#c8cdb8" stroke-width="1.5"/><line x1="10" y1="6" x2="10" y2="10" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round"/><circle cx="10" cy="13" r="0.75" fill="#c8cdb8"/></svg></div>
-          <div class="doc-meta"><div class="doc-type">Official Page · Web</div><div class="doc-name">B-14 Ridge — Bergara USA</div><div class="doc-size">bergara.online/us</div></div>
+        <a class="doc-card" href="https://www.bergara.online/us/catalog/" target="_blank">
+          <div class="doc-icon">
+            <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          </div>
+          <div class="doc-info">
+            <h4>2026 Product Catalog</h4>
+            <p>Full Bergara catalog — B-14 Ridge: pp. 33–35</p>
+          </div>
         </a>
-        <a class="doc-card" href="https://palmettostatearmory.com/bergara-ridge-rifle-308-synthetic-stock-b14s501c.html" target="_blank">
-          <div class="doc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="9" width="14" height="9" rx="1.5" stroke="#c8cdb8" stroke-width="1.5"/><path d="M7 9V6a3 3 0 016 0v3" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-          <div class="doc-meta"><div class="doc-type">Spec Sheet · Dealer</div><div class="doc-name">PSA Full Specification Sheet</div><div class="doc-size">palmettostatearmory.com</div></div>
-        </a>
-        <a class="doc-card" href="https://gun.deals/search/apachesolr_search/b14s501c" target="_blank">
-          <div class="doc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="#c8cdb8" stroke-width="1.5"/><line x1="13.5" y1="13.5" x2="17" y2="17" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-          <div class="doc-meta"><div class="doc-type">Price Tracker · Web</div><div class="doc-name">gun.deals — Live Price Feed</div><div class="doc-size">100+ vendors · B14S501C</div></div>
-        </a>
-        <a class="doc-card" href="https://www.wikiarms.com/guns?q=B14S501C" target="_blank">
-          <div class="doc-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 14l4-8 3 6 2-3 5 5" stroke="#c8cdb8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="doc-meta"><div class="doc-type">Price History · Web</div><div class="doc-name">WikiArms — Live Inventory</div><div class="doc-size">from $637.99 · wikiarms.com</div></div>
+        <a class="doc-card" href="https://www.bergara.online/us/support/faqs/" target="_blank">
+          <div class="doc-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="doc-info">
+            <h4>FAQ & Support</h4>
+            <p>Bergara official support portal</p>
+          </div>
         </a>
       </div>
+    </div>
 
-    </div><!-- end left -->
+    <hr class="divider">
 
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-
-      <div class="sidebar-card">
-        <div class="sidebar-card-head">Quick Specs</div>
-        <div class="sidebar-card-body">
-          <div class="spec-pill"><span class="spec-pill-label">Action</span><span class="spec-pill-val">Bolt-Action</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Caliber</span><span class="spec-pill-val">.308 Win</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Barrel</span><span class="spec-pill-val">20" #5</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Twist</span><span class="spec-pill-val">1:10"</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Weight</span><span class="spec-pill-val">7.4 lbs</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">OAL</span><span class="spec-pill-val">39.5"</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Capacity</span><span class="spec-pill-val">4+1</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Trigger</span><span class="spec-pill-val">~3 lbs</span></div>
-          <div class="moa-badge">
-            <strong>≤1.0 MOA</strong>
-            Sub-MOA Guaranteed
+    <!-- ACCESSORIES -->
+    <div class="accessories-section">
+      <div class="section-label">What Goes With It</div>
+      <h2 class="section-title">Recommended Accessories</h2>
+      <div class="acc-list">
+        <div class="acc-item">
+          <div class="acc-dot"></div>
+          <div style="flex:1">
+            <div class="acc-name">Scope Rings & Bases — Remington 700 pattern</div>
+            <div class="acc-note">Wide aftermarket support: Talley, Leupold, Warne, Burris. 6-48 screw pattern. Standard & 20 MOA options.</div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-dot"></div>
+          <div style="flex:1">
+            <div class="acc-name">Muzzle Brake / Suppressor</div>
+            <div class="acc-note">5/8×24 threaded muzzle accepts standard .30-cal brakes and suppressors. Direct-thread mount recommended.</div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-dot"></div>
+          <div style="flex:1">
+            <div class="acc-name">Rifle Sling</div>
+            <div class="acc-note">Standard sling swivel studs installed. Compatible with all two-point hunting slings (Magpul MS1, Blue Force Gear, Vero Vellini).</div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-dot"></div>
+          <div style="flex:1">
+            <div class="acc-name">Aftermarket Triggers</div>
+            <div class="acc-note">Accepts Remington 700-pattern drop-in triggers. Timney 510, TriggerTech Primary, and Rifle Basix L-2 are popular upgrades.</div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-dot"></div>
+          <div style="flex:1">
+            <div class="acc-name">Bipod</div>
+            <div class="acc-note">Front sling stud bipod attachment (Harris 1A2-BRM 6–9" recommended for .308 prone shooting).</div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="sidebar-card">
-        <div class="sidebar-card-head">Documents & Media</div>
-        <div class="sidebar-card-body" style="display:flex;flex-direction:column;gap:0.5rem">
-          <a href="https://www.bergara.online/en/wp-content/uploads/sites/5/2026/01/2026-Bergara-Catalog_web_INT.pdf" target="_blank" class="btn-primary" style="font-size:0.7rem;justify-content:center">
-            ↓ 2026 Bergara Catalog (PDF)
-          </a>
-          <a href="https://www.bergara.online/us/rifles/b14/ridge-rifle/" target="_blank" class="btn-secondary" style="font-size:0.7rem;text-align:center">
-            Official Product Page ↗
-          </a>
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <div class="sidebar-card-header">Product Identity</div>
+      <div class="sidebar-card-body">
+        <div class="identity-row">
+          <span class="ident-label">MPN</span>
+          <span class="ident-val mono">B14S501C</span>
+        </div>
+        <div class="identity-row">
+          <span class="ident-label">UPC</span>
+          <span class="ident-val mono">043125015719</span>
+        </div>
+        <div class="identity-row">
+          <span class="ident-label">Brand</span>
+          <span class="ident-val">Bergara Rifles</span>
+        </div>
+        <div class="identity-row">
+          <span class="ident-label">Series</span>
+          <span class="ident-val">B-14 Series</span>
+        </div>
+        <div class="identity-row">
+          <span class="ident-label">Model</span>
+          <span class="ident-val">Ridge</span>
+        </div>
+        <div class="identity-row">
+          <span class="ident-label">Status</span>
+          <span class="ident-val status-active">● Active</span>
+        </div>
+        <div class="identity-row">
+          <span class="ident-label">Origin</span>
+          <span class="ident-val">Spain</span>
+        </div>
+        <div class="identity-row">
+          <span class="ident-label">Warranty</span>
+          <span class="ident-val">Ltd. Lifetime</span>
+        </div>
+        <div class="identity-row">
+          <span class="ident-label">MSRP</span>
+          <span class="ident-val" style="color:var(--orange);font-size:18px;">$999.00</span>
         </div>
       </div>
+    </div>
 
-      <div class="sidebar-card">
-        <div class="sidebar-card-head">Recommended Accessories</div>
-        <div class="sidebar-card-body">
-          <div class="spec-pill"><span class="spec-pill-label">Rail</span><span class="spec-pill-val" style="font-family:'DM Mono',monospace;font-size:0.75rem">BA0008 — 20 MOA</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Compatible</span><span class="spec-pill-val" style="font-size:0.78rem">Rem 700 bases</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Muzzle</span><span class="spec-pill-val" style="font-size:0.78rem">5/8×24 thread</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Made in</span><span class="spec-pill-val" style="font-size:0.78rem">Bergara, Spain</span></div>
+    <div class="sidebar-card">
+      <div class="sidebar-card-header">At a Glance</div>
+      <div class="sidebar-card-body">
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-val">20"</div>
+            <div class="stat-label">Barrel</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">7.4<span style="font-size:12px;font-weight:400"> lbs</span></div>
+            <div class="stat-label">Weight</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">4+1</div>
+            <div class="stat-label">Capacity</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">1:10"</div>
+            <div class="stat-label">Twist Rate</div>
+          </div>
+          <div class="stat-box" style="grid-column:span 2">
+            <div class="stat-val">39.5"</div>
+            <div class="stat-label">Overall Length</div>
+          </div>
+        </div>
+        <div class="guarantee-box" style="margin-top:10px;">
+          <div class="g-val">1.0 MOA</div>
+          <div class="g-label">Accuracy Guarantee</div>
         </div>
       </div>
+    </div>
 
-      <div class="sidebar-card">
-        <div class="sidebar-card-head">Price History</div>
-        <div class="sidebar-card-body">
-          <div class="spec-pill"><span class="spec-pill-label">MSRP</span><span class="spec-pill-val">$949.00</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Avg (12mo)</span><span class="spec-pill-val">$902.84</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Lowest today</span><span class="spec-pill-val" style="color:var(--orange)">$735.99</span></div>
-          <div class="spec-pill"><span class="spec-pill-label">Used avg</span><span class="spec-pill-val">$818.60</span></div>
-        </div>
+    <div class="sidebar-card">
+      <div class="sidebar-card-header">Find a Dealer</div>
+      <div class="sidebar-card-body" style="display:flex;flex-direction:column;gap:8px;">
+        <a href="https://palmettostatearmory.com/bergara-ridge-rifle-308-synthetic-stock-b14s501c.html" target="_blank" class="btn-compare" style="text-align:center;display:block;">Palmetto State Armory</a>
+        <a href="https://www.eurooptic.com/Bergara-B-14-Ridge-308-Win-20-1-10-Bbl-6-Rifle-w-Synthetic-Stock-B14S501C.aspx" target="_blank" class="btn-secondary" style="text-align:center;display:block;">EuroOptic</a>
+        <a href="https://www.impactguns.com/bolt-action-rifles/bergara-b-14-ridge-rifle-308-win-20-barrel-threaded-5-8-24-cerakote-finish-black-black-gray-synthetic-stock-hinged-floorplate-fits-rem-700-scope-base-with-6-48-screws-4rd-043125015719-b14s501c" target="_blank" class="btn-secondary" style="text-align:center;display:block;">Impact Guns</a>
+        <a href="https://www.bergara.online/us/where-to-buy/" target="_blank" class="btn-secondary" style="text-align:center;display:block;">All Dealers →</a>
       </div>
+    </div>
 
-    </div><!-- end sidebar -->
+    <div class="sidebar-card">
+      <div class="sidebar-card-header">Data Sources</div>
+      <p class="source-note">
+        Official site: <a href="https://www.bergara.online/us/rifles/b14/ridge-rifle/" target="_blank" style="color:var(--orange)">bergara.online</a><br>
+        2026 Bergara Catalog, pp. 33–35<br>
+        Verified vendors: PSA, EuroOptic, Impact Guns, GunBroker<br>
+        UPC: 043125015719 — confirmed via Impact Guns & GunBroker<br>
+        <br>
+        <em>Last updated: April 2026</em>
+      </p>
+    </div>
 
-  </div><!-- end main-grid -->
-</div><!-- end container -->
+    <div class="origin-badge" style="text-align:center;padding:10px;">
+      Built in Bergara, Spain — Est. Dikar S. Coop.
+    </div>
 
-<!-- VENDOR TABLE -->
-<div class="vendor-section" id="vendor-table">
-  <div class="container">
-    <div class="vendor-head">
-      <div>
-        <h2 class="vendor-title">Live Inventory Search from <span>all vendors</span></h2>
-        <div class="vendor-meta">MPN: B14S501C &nbsp;·&nbsp; UPC: 043125015719 &nbsp;·&nbsp; Prices checked: April 13, 2026</div>
-      </div>
-    </div>
-    <div class="vendor-disclaimer">
-      <strong>⚠ FFL Required:</strong> All firearm purchases require FFL dealer transfer. Confirm dealer availability with vendor before ordering. Prices are point-in-time — verify at vendor before purchase.
-    </div>
-    <div class="vendor-controls">
-      <button class="vendor-filter active" onclick="filterVendors('all', this)">All Vendors</button>
-      <button class="vendor-filter" onclick="filterVendors('instock', this)">In Stock Only</button>
-      <button class="vendor-filter" onclick="filterVendors('freeship', this)">Free Shipping</button>
-      <button class="vendor-filter" onclick="filterVendors('under800', this)">Under $800</button>
-      <span class="vendor-count-label" id="vendor-count">Showing 28 vendors</span>
-    </div>
-    <div class="vendor-table-wrap">
-      <table class="vendor-table" id="vendorTable">
-        <thead>
-          <tr>
-            <th onclick="sortTable('store')">Store ↕</th>
-            <th onclick="sortTable('price')" class="sorted">Price ↕</th>
-            <th onclick="sortTable('shipping')">Shipping ↕</th>
-            <th>In Stock</th>
-            <th>Notes</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody id="vendorBody"></tbody>
-      </table>
-    </div>
-    <div class="vendor-summary">
-      <div class="vsummary-card">
-        <div class="vsummary-label">Lowest Price</div>
-        <div class="vsummary-val highlight" id="sum-low">$735.99</div>
-      </div>
-      <div class="vsummary-card">
-        <div class="vsummary-label">Highest Price</div>
-        <div class="vsummary-val" id="sum-high">$949.99</div>
-      </div>
-      <div class="vsummary-card">
-        <div class="vsummary-label">Avg Price</div>
-        <div class="vsummary-val" id="sum-avg">$873</div>
-      </div>
-      <div class="vsummary-card">
-        <div class="vsummary-label">Vendors Listed</div>
-        <div class="vsummary-val" id="sum-count">28</div>
-      </div>
-    </div>
-  </div>
-</div>
+  </aside>
+</main>
 
 <!-- FOOTER -->
 <footer>
-  <div>Gun.Aggregator &nbsp;·&nbsp; B14S501C — Bergara B-14 Ridge .308 Win &nbsp;·&nbsp; Data sourced from bergara.online + vendor listings &nbsp;·&nbsp; April 2026</div>
-  <div class="footer-ffl">All firearms are sold through licensed FFL dealers. Prices are subject to change. This site is not affiliated with Bergara USA or Bergara S.A.U.</div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">Rifle<span>Compare</span></div>
+      <p>The independent firearms aggregator for hunters, competitors, and collectors. Compare products and prices across all major vendors in one place.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#">Bolt-Action Rifles</a></li>
+        <li><a href="#">Semi-Auto Rifles</a></li>
+        <li><a href="#">Pistols</a></li>
+        <li><a href="#">Shotguns</a></li>
+        <li><a href="#">Optics</a></li>
+        <li><a href="#">Ammunition</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Brands</h4>
+      <ul>
+        <li><a href="#">Bergara</a></li>
+        <li><a href="#">Ruger</a></li>
+        <li><a href="#">Sig Sauer</a></li>
+        <li><a href="#">Tikka</a></li>
+        <li><a href="#">Browning</a></li>
+        <li><a href="#">All Brands →</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">Vendor Partners</a></li>
+        <li><a href="#">Legal Notice</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 RifleCompare. All prices shown are MSRP. Check vendor sites for current pricing. All firearm purchases must comply with applicable federal, state, and local laws.</span>
+    <span><a href="#">Terms</a> · <a href="#">Privacy</a></span>
+  </div>
 </footer>
 
-<script>
-const vendors = [
-  { store:"EuroOptic",           url:"https://www.eurooptic.com/bergara-b-14-ridge-308-win-20-1-10-bbl-6-rifle-w-synthetic-stock-b14s501c",   price:735.99, shipping:"Free S/H",       instock:true,  notes:"Price recently lowered",     best:true },
-  { store:"WikiArms",            url:"https://www.wikiarms.com/guns?q=B14S501C",                                                               price:735.99, shipping:"Varies",         instock:true,  notes:"Aggregates multiple dealers", best:true },
-  { store:"KYGUNCO",             url:"https://www.kygunco.com/search?q=B14S501C",                                                              price:749.99, shipping:"Free S/H",       instock:true,  notes:"KY dealer, ships nationally"  },
-  { store:"Hinterland Outfitters",url:"https://www.hinterlandoutfitters.com/bergara-b14s501c-171359.html",                                     price:799.99, shipping:"Free S/H",       instock:true,  notes:""                             },
-  { store:"Classic Firearms",    url:"https://www.classicfirearms.com/bergara-b14s501c-b-14-ridge-20-synthetic-black/",                        price:815.00, shipping:"Calculated",     instock:true,  notes:"Lifetime warranty option"     },
-  { store:"Bud's Gun Shop",      url:"https://www.budsgunshop.com/product_info.php/products_id/142720",                                        price:829.99, shipping:"Free S/H",       instock:true,  notes:"Layaway available"            },
-  { store:"Palmetto State Armory",url:"https://palmettostatearmory.com/bergara-ridge-rifle-308-synthetic-stock-b14s501c.html",                  price:849.99, shipping:"Free S/H",       instock:true,  notes:""                             },
-  { store:"Smoky Mtn Guns & Ammo",url:"https://www.smga.com/bergara/b14-ridge-308win-cerakote-51913",                                          price:829.99, shipping:"Calculated",     instock:false, notes:"Out of stock"                 },
-  { store:"GrabAGun",            url:"https://grabagun.com/bergara-ridge-rifle-bolt-action-308-win-20-barrel-4-rounds.html",                   price:899.99, shipping:"Free S/H",       instock:true,  notes:"Sale from $999.99"            },
-  { store:"Impact Guns",         url:"https://www.impactguns.com",                                                                             price:899.99, shipping:"Free S/H",       instock:true,  notes:""                             },
-  { store:"GunBroker (BlackMarketArms)",url:"https://www.gunbroker.com",                                                                       price:899.99, shipping:"$35.00",         instock:true,  notes:"Fixed price, no CC fee"       },
-  { store:"Hyatt Gun Store",     url:"https://www.hyattgunstore.com/bergara-b-14-ridge-308-winchester-rifle-20-threaded-barrel.html",           price:899.99, shipping:"Calculated",     instock:true,  notes:""                             },
-  { store:"Nagel's Gun Shop",    url:"https://nagelsguns.net/product/bergara-b-14-ridge-308-rifle-threaded-barrel-sub-moa-guarantee-20-b14s501c/", price:899.99,shipping:"Calculated",  instock:true,  notes:""                             },
-  { store:"Sportsman's Warehouse",url:"https://www.sportsmans.com/shooting-gear-gun-supplies/rifles/bergara-b-14-ridge-black-bolt-action-rifle-308-winchester-20in/p/1737332", price:949.99, shipping:"Free S/H", instock:true, notes:"5-star rated" },
-  { store:"Scheels",             url:"https://www.scheels.com/p/bergara-b-14-ridge-bolt-action-308-winchester-rifle/17544-B14S501C/",           price:949.99, shipping:"Free S/H",       instock:true,  notes:""                             },
-  { store:"Guns.com",            url:"https://www.guns.com/search?query=043125015719",                                                         price:919.00, shipping:"Free S/H",       instock:true,  notes:""                             },
-  { store:"Locked & Loaded",     url:"https://www.lockedloaded.com/product-search-results?search=043125015719",                                price:null,   shipping:"—",              instock:false, notes:"Not listed / out of stock"    },
-  { store:"Dahlonega Armory",    url:"https://www.dahlonegaarmory.com/product-search-results?search=043125015719",                             price:null,   shipping:"—",              instock:false, notes:"Not listed"                   },
-  { store:"GunBroker (GreenTopVA)",url:"https://www.gunbroker.com",                                                                            price:913.11, shipping:"Free S/H",       instock:true,  notes:"Fixed price listing"          },
-  { store:"Wholesale Hunter",    url:"https://www.gunbroker.com",                                                                              price:899.99, shipping:"Free S/H",       instock:true,  notes:"GunBroker fixed price"        },
-  { store:"Governor's Gun Club", url:"https://governorsgunclub.com/product/bergara-rifles-b14s501c-b-14-ridge-308-win-41-20-graphite-black-cerakote-barrel-graphite-black-cerakote-steel-receiver-gray-speckled-black-fixed-american-style-stock-right-hand/", price:899.99, shipping:"Free S/H", instock:true, notes:"" },
-  { store:"True Value Gun",      url:"https://truegunvalue.com/rifle/bergara-b14/price-historical-value",                                      price:902.84, shipping:"Varies",         instock:true,  notes:"Avg market value"            },
-  { store:"Online Gun Deals",    url:"https://www.onlinegundeals.com/products/rifles-bergara-b14s501c-043125015719-6864",                      price:829.99, shipping:"Calculated",     instock:true,  notes:""                             },
-  { store:"GunWatcher",          url:"https://products.gunwatcher.com",                                                                        price:735.99, shipping:"Free S/H",       instock:true,  notes:"Aggregated listing"           },
-  { store:"gun.deals",           url:"https://gun.deals/search/apachesolr_search/b14s501c",                                                    price:735.99, shipping:"Varies",         instock:true,  notes:"100+ vendor aggregator"      },
-  { store:"GunBroker (Magnum Ballistics)",url:"https://www.gunbroker.com",                                                                     price:899.99, shipping:"$14.99",         instock:true,  notes:"Fixed price"                  },
-  { store:"GunBroker (BSi Firearms)",url:"https://www.gunbroker.com",                                                                          price:913.11, shipping:"$30.00",         instock:true,  notes:"Fixed price"                  },
-  { store:"GunBroker (BlackMktArms #2)",url:"https://www.gunbroker.com",                                                                       price:899.99, shipping:"$35.00",         instock:true,  notes:"10+ qty available"            },
-];
-
-let currentFilter = 'all';
-let currentSort = 'price';
-let sortAsc = true;
-
-function renderTable(data) {
-  const tbody = document.getElementById('vendorBody');
-  const count = document.getElementById('vendor-count');
-  const priced = data.filter(v => v.price !== null);
-  const minP = priced.length ? Math.min(...priced.map(v=>v.price)) : 0;
-  
-  tbody.innerHTML = data.map((v, i) => {
-    const isBest = v.price === minP && v.price !== null;
-    const priceStr = v.price !== null ? '$' + v.price.toFixed(2) : '—';
-    const shipTag = v.shipping === 'Free S/H'
-      ? `<span class="tag-free">Free S/H</span>`
-      : v.shipping === '—' ? '<span class="tag-unknown">—</span>'
-      : `<span class="tag-paid">${v.shipping}</span>`;
-    const stockTag = v.instock
-      ? `<span class="tag-instock">● In Stock</span>`
-      : `<span class="tag-oos">● Out of Stock</span>`;
-    const bestBadge = isBest ? `<span class="best-badge">BEST</span>` : '';
-    return `<tr class="${isBest ? 'best-deal' : ''}">
-      <td class="store-col"><a href="${v.url}" target="_blank">${v.store}</a>${bestBadge}</td>
-      <td class="price-col ${isBest ? 'best' : ''}">${priceStr}</td>
-      <td>${shipTag}</td>
-      <td>${stockTag}</td>
-      <td style="color:var(--text-light);font-size:0.8rem">${v.notes}</td>
-      <td><button class="report-btn" title="Report issue">⚑</button></td>
-    </tr>`;
-  }).join('');
-  
-  count.textContent = `Showing ${data.length} vendors`;
-  updateSummary(data);
-}
-
-function updateSummary(data) {
-  const priced = data.filter(v => v.price !== null).map(v => v.price);
-  document.getElementById('sum-low').textContent = priced.length ? '$' + Math.min(...priced).toFixed(2) : '—';
-  document.getElementById('sum-high').textContent = priced.length ? '$' + Math.max(...priced).toFixed(2) : '—';
-  document.getElementById('sum-avg').textContent = priced.length ? '$' + Math.round(priced.reduce((a,b)=>a+b,0)/priced.length) : '—';
-  document.getElementById('sum-count').textContent = data.length;
-}
-
-function filterVendors(type, btn) {
-  currentFilter = type;
-  document.querySelectorAll('.vendor-filter').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  applyFilterSort();
-}
-
-function sortTable(col) {
-  if (currentSort === col) sortAsc = !sortAsc;
-  else { currentSort = col; sortAsc = true; }
-  applyFilterSort();
-}
-
-function applyFilterSort() {
-  let data = [...vendors];
-  if (currentFilter === 'instock') data = data.filter(v => v.instock);
-  if (currentFilter === 'freeship') data = data.filter(v => v.shipping === 'Free S/H');
-  if (currentFilter === 'under800') data = data.filter(v => v.price !== null && v.price < 800);
-  
-  data.sort((a, b) => {
-    let av, bv;
-    if (currentSort === 'price') {
-      av = a.price ?? 9999; bv = b.price ?? 9999;
-    } else if (currentSort === 'store') {
-      av = a.store.toLowerCase(); bv = b.store.toLowerCase();
-      return sortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
-    } else if (currentSort === 'shipping') {
-      av = a.shipping === 'Free S/H' ? 0 : a.shipping === '—' ? 999 : parseFloat(a.shipping.replace(/[^0-9.]/g,''))||50;
-      bv = b.shipping === 'Free S/H' ? 0 : b.shipping === '—' ? 999 : parseFloat(b.shipping.replace(/[^0-9.]/g,''))||50;
-    }
-    return sortAsc ? av - bv : bv - av;
-  });
-  
-  renderTable(data);
-}
-
-applyFilterSort();
-</script>
 </body>
 </html>
